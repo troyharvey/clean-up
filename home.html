@@ -18,6 +18,8 @@
 
     <!-- Include the compiled Ratchet CSS -->
     <link rel="stylesheet" href="ratchet.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less" />
+    <script src="less.js" type="text/javascript"></script>
 
     <!-- Include the compiled Ratchet JS -->
     <script src="ratchet.js"></script>
@@ -35,35 +37,75 @@
 
 	<!-- Make sure all your bars are the first things in your <body> -->
 	<header class="bar-title">
-		<h1 class="title" style="text-align:left; margin-left: 10px;">Hi, Ashley</h1>
+		<h1 class="title" >Hi, Ashley 305 pts</h1>
 		<a class="button" href="#">
 			Sign-Out
 		</a>
 	</header>
 
 	<div class="content">
-		<ul class="list inset">
+		<ul id="cleanups" class="list inset">
 			<li class="list-divider">Recently Added:</li>
-			<li class="list-cleanup">
-				<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
-				<h3>Gang graffiti</h3>
-				<span class="cleanup-group">Group Cleanup:9/2/3013</span>
-				<span class="cleanup-points">10pts</text>
+			<li class="list-cleanups">
+				<div class="cleanup-image" style="width:65px;float:left;">
+					<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
+				</div>
+				<div class="cleanup-summary">
+					<div class="cleanup-attending">10</div>
+					<div class="cleanup-description">attending</div>
+				</div>
+				<div class="cleanup-content">
+					<h3>Gang graffiti</h3>
+					<div class="cleanup-group">Group Cleanup:9/2/3013</div>
+					<div class="cleanup-points">10pts</div>
+				</div>
+				<span class="chevron" style=""></span>
+			</li>
+			<li class="list-cleanups">
+				<div class="cleanup-image" style="width:65px;float:left;">
+					<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
+				</div>
+				<div class="cleanup-summary">
+					<div class="cleanup-attending">2</div>
+					<div class="cleanup-description">attending</div>
+				</div>
+				<div class="cleanup-content">
+					<h3>Litter/Dump site</h3>
+					<div class="cleanup-group">Group Cleanup:11/12/2013</div>
+					<div class="cleanup-points">10pts</div>
+				</div>
+				<span class="chevron" style="clear:both;"></span>
+			</li>
+			<li class="list-cleanups">
+				<div class="cleanup-image" style="width:65px;float:left;">
+					<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
+				</div>
+				<div class="cleanup-summary">
+					<div class="cleanup-attending">1</div>
+					<div class="cleanup-description">attending</div>
+				</div>
+				<div class="cleanup-content">
+					<h3>Plant a Tree</h3>
+					<div class="cleanup-group">Anytime Cleanup</div>
+					<div class="cleanup-points">4 people have completed this</div>
+				</div>
 				<span class="chevron"></span>
 			</li>
-			<li class="list-cleanup">
-				<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
-				<h3>Gang graffiti</h3>
-				<span class="cleanup-group">Group Cleanup:9/2/3013</span>
-				<span class="cleanup-points">10pts</text>
-				<span class="chevron"></span>
-			</li>
-			<li class="list-cleanup">
-				<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
-				<h3>Gang graffiti</h3>
-				<span class="cleanup-group">Group Cleanup:9/2/3013</span>
-				<span class="cleanup-points">10pts</text>
-				<span class="chevron"></span>
+			<li class="list-divider">Most Popular:</li>
+			<li class="list-cleanups">
+				<div class="cleanup-image" style="width:65px;float:left;">
+					<img src="cleanup-image1.jpg" alt="cleanup1" width="65px" height="49px" />
+				</div>
+				<div class="cleanup-summary">
+					<div class="cleanup-attending">26</div>
+					<div class="cleanup-description">attending</div>
+				</div>
+				<div class="cleanup-content">
+					<h3>Gang graffiti</h3>
+					<div class="cleanup-group">Group Cleanup:9/1/2013</div>
+					<div class="cleanup-points">30pts</div>
+				</div>
+				<span class="chevron" style=""></span>
 			</li>
 		</ul>
 	</div>
