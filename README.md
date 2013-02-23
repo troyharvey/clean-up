@@ -2,6 +2,10 @@
 
 Louisville Code Across America Hack-a-thon 2013
 
+[cleanuplouisville.org](http://cleanuplouisville.org)
+
+![Screenshot](http://troyharvey.github.com/clean-up/img/cleanup.jpg)
+
 ## Contributing
 1. Grab favorite beverage.
 2. `git clone git@github.com:troyharvey/clean-up.git`
