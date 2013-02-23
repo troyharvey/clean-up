@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CleanUp Profile</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="ratchet.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less" />
+    <script src="less.js" type="text/javascript"></script>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.js"></script>
+
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style type="text/css">
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+    </style>
+
+  </head>
+  <body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title">
+    <a class="button-prev" href="#">
+      Back
+    </a>
+    <h1 class="title">Activity</h1>
+    <a class="button" href="#">
+      *
+    </a>
+  </header>
+
+  <nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="view.html" data-ignore="push">
+          <img class="tab-icon" src="img/ico_view.png">
+          <div class="tab-label">View</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="create.html" data-ignore="push">
+          <img class="tab-icon" src="img/ico_create.png">
+          <div class="tab-label">Create</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="profile.html" data-ignore="push">
+          <img class="tab-icon" src="img/ico_profile.png">
+          <div class="tab-label">Profile</div>
+        </a>
+      </li>
+      <li class="tab-item active">
+        <a href="activity.html" data-ignore="push">
+          <img class="tab-icon" src="img/ico_map.png">
+          <div class="tab-label">Activity</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content" style="overflow: hidden;">
+<img src="img/map.jpg" style="width:105%;" border="0" />
+  </div>
+
+  </body>
+</html>
