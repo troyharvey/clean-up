@@ -1,92 +1,77 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>CleanUp Louisville</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
 
-	<link rel="stylesheet/less" href="less/bootstrap.less">
-	<link rel="stylesheet/less" href="main.less">
-	<link rel="stylesheet/less" href="less/responsive.less">
-	<script src="js/vendor/less-1.3.3.min.js"></script>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-</head>
-<body>
-	<!--[if lt IE 7]>
-			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-	<![endif]-->
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-	<div class="container-narrow">
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-		<div class="masthead">
-			<ul class="nav nav-pills pull-right">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<h3 class="muted">Project name</h3>
-		</div>
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="ratchet.css">
 
-		<hr>
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.js"></script>
 
-		<div class="jumbotron">
-			<h1>Super awesome marketing speak!</h1>
-			<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			<a class="btn btn-large btn-success" href="#">Sign up today</a>
-		</div>
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style type="text/css">
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+    </style>
 
-		<hr>
+  </head>
+  <body>
 
-		<div class="row-fluid marketing">
-			<div class="span6">
-				<h4>Subheading</h4>
-				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title">
+    <h1 class="title">Ratchet</h1>
+  </header>
 
-				<h4>Subheading</h4>
-				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <div class="content-padded">
+      <p class="welcome">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resorces:</p>
+    </div>
 
-				<h4>Subheading</h4>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			</div>
+    <ul class="list inset">
+      <li>
+        <a href="http://maker.github.com/ratchet/">
+          <strong>Ratchet documentation</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.github.com/maker/ratchet/">
+          <strong>Ratchet on Github</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://groups.google.com/forum/#!forum/goratchet">
+          <strong>Ratchet Google group</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/GoRatchet">
+          <strong>Ratchet on Twitter</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+    </ul>
 
-			<div class="span6">
-				<h4>Subheading</h4>
-				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+  </div>
 
-				<h4>Subheading</h4>
-				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-				<h4>Subheading</h4>
-				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			</div>
-		</div>
-
-		<hr>
-
-		<div class="footer">
-			<p>&copy; Company 2013</p>
-		</div>
-
-	</div> <!-- /container -->
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
-	<script src="js/vendor/bootstrap.min.js"></script>
-
-	<script src="js/main.js"></script>
-
-	<script>
-			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-</body>
+  </body>
 </html>
